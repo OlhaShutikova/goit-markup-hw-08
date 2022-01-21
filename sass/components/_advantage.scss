@@ -1,0 +1,23 @@
+
+  .advantage {
+    display: flex;
+    flex-wrap: wrap;
+
+    &__item:not(:last-child) {
+      margin-right: 30px;
+    }
+
+    &__item {
+      width: 270px;
+    }
+
+    &__icons {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 30px;
+      padding: 25px 100px;
+      background-color: var(--background-secondary);
+    }
+  }
+  

@@ -1,0 +1,18 @@
+.logo {
+    color: var(--focus-color);
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    text-decoration: none;
+  }
+  
+  .logo__abr {
+    color: #000000;
+
+    &--white {
+      color: var(--primary-white-color);
+    }
+  }
+
+ 
