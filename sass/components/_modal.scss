@@ -3,13 +3,24 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    min-height: 581px;
-    min-width: 528px;
+    height: 609px;
+    min-width: 450px;
     background: var(--primary-white-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     padding: 40px 39px 40px 41px;
+
+    @media screen and(max-width:479px) {
+      min-width: 320px;
+    }
+    @media screen and(min-width:480px) {
+      width: 450px;
+    }
+    @media screen and(min-width: 1200px) {
+      width: 528px;
+      height: 581px
+    }
   }
   
   .modal-button {
@@ -35,5 +46,5 @@
       fill: #2196f3;
     }
   }
-  
+ 
  
