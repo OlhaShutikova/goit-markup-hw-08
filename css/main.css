@@ -458,7 +458,7 @@ img {
 }
 
 .footer-logo--inverse {
-  color: var(--primery-background);
+  color: var(--primary-white-color);
   font-family: Raleway;
   font-style: normal;
   font-weight: 700;
@@ -1098,19 +1098,13 @@ img {
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   height: 609px;
-  min-width: 450px;
+  min-width: 320px;
   background: var(--primary-white-color);
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   -webkit-border-radius: 4px;
           border-radius: 4px;
   padding: 40px 39px 40px 41px;
-}
-
-@media screen and (max-width: 479px) {
-  .modal {
-    min-width: 320px;
-  }
 }
 
 @media screen and (min-width: 480px) {
@@ -1149,9 +1143,9 @@ img {
 
 .modal-icon {
   fill: #000000;
-  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  -o-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: fill 250ms var(--timing-function);
+  -o-transition: fill 250ms var(--timing-function);
+  transition: fill 250ms var(--timing-function);
 }
 
 .modal-button:focus > .modal-icon,
@@ -1622,11 +1616,11 @@ textarea[placeholder='Введите текст'] {
           box-sizing: border-box;
   -webkit-border-radius: 4px;
           border-radius: 4px;
-  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  -o-transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: -webkit-transform 250ms var(--timing-function);
+  transition: -webkit-transform 250ms var(--timing-function);
+  -o-transition: transform 250ms var(--timing-function);
+  transition: transform 250ms var(--timing-function);
+  transition: transform 250ms var(--timing-function), -webkit-transform 250ms var(--timing-function);
   -webkit-transition-property: all;
   -o-transition-property: all;
   transition-property: all;
@@ -1696,14 +1690,6 @@ textarea[placeholder='Введите текст'] {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: start;
-    -webkit-align-items: flex-start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    -webkit-box-pack: start;
-    -webkit-justify-content: flex-start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
     -webkit-box-align: baseline;
     -webkit-align-items: baseline;
         -ms-flex-align: baseline;

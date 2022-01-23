@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   justify-content: center;
+
   @media screen and (min-width: 768px) {
     margin: -15px;
     display: flex;
@@ -48,8 +49,6 @@
     margin-bottom: 0;
   }
 }
-
-
 
 .box {
   display: flex;
